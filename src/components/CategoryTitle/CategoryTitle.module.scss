@@ -1,0 +1,34 @@
+h2 {
+    font-size: 36px;
+    line-height: 1.44;
+    color: #000000;
+  }
+  
+  @media (max-width: 1200px) {
+    h2 {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 26px;
+    }
+  }
+  
+  .category__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  @media (max-width: 1200px) {
+    .category__title {
+      margin-bottom: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .category__title {
+      margin-bottom: 20px;
+    }
+  }
