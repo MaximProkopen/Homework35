@@ -5,7 +5,7 @@ const Products = (props) => {
   const { productImg, productName, price } = props;
 
   return (
-    <div className={styles.product}>
+    <div className={styles.products}>
       <div className={styles.products_image}>
         <a href="/" className={styles.products_image_block}>
           <img src={productImg} alt="" />
@@ -37,4 +37,4 @@ const Products = (props) => {
   )
 }
 
-export default Products
+export default Products;

@@ -15,7 +15,7 @@ const Header = (props) => {
           <div className={styles.navbar}>
             <ul>
               <li>
-                <a href="/" className={styles.navbar__icon}>
+                <a href="/WishlistPage" className={styles.navbar__icon}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
