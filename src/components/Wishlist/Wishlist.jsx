@@ -1,6 +1,6 @@
 import styles from "./Wishlist.module.scss";
 import stylesBtn from "../Category/Category.module.scss";
-import product from '../../components/Products/Products_img/product-07.jpg';
+import productAddImg from '../../components/Products/Products_img/product-07.jpg';
 import classNames from "classnames";
 
 const Wishlist = () => {
@@ -26,7 +26,7 @@ const Wishlist = () => {
 
         <div className={styles.item__body}>
           <img
-            src={product}
+            src={productAddImg}
             alt="Flowers cotton dress"
             className={styles.item__image}
           />
