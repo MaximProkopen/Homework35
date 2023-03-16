@@ -1,5 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
 import { useReducer, createContext } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 import Layout from './components/Layout.jsx/Layout';
 import HomePage from './pages/HomePage/HomePage';
@@ -41,7 +41,7 @@ function App() {
   const value = {
     addToWishlist: addToWishlist,
     removeFromWishlist: removeFromWishlist,
-    productWishlist: state.productWishlist
+    state
   }
 
   return (

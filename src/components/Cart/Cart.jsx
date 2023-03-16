@@ -1,10 +1,8 @@
 import styles from "../Cart/Cart.module.scss";
-import classNames from "classnames";
 import productAddImg from '../../components/Products/Products_img/product-07.jpg';
 
 const Cart = () => {
-    return (
-        <div className={styles.cart__grid}>
+    return (     
             <div className={styles.cart__list}>
                 <div className={styles.item}>
                     <div className={styles.item__content}>
@@ -45,28 +43,8 @@ const Cart = () => {
                 </div>
             </div>
 
-            <div className={styles.summary}>
-                <h4 className={styles.summary__title}>Summary</h4>
+            
 
-                <div className={styles.summary__body}>
-                    <div className={styles.summary__line}>
-                        <div>Total</div>
-                        <div>$2020.00</div>
-                    </div>
-                </div>
-
-                <button
-                    type="submit"
-                    className={classNames(
-                        styles.btn,
-                        styles.btn_dark,
-                        styles.btn_full_width
-                    )}
-                >
-                    Check Out
-                </button>
-            </div>
-        </div>
     )
 }
 

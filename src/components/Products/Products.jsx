@@ -1,4 +1,3 @@
-import React from 'react';
 import { useContext } from 'react';
 import { WishlistContext } from '../../App';
 import styles from './Products.module.scss';
@@ -9,7 +8,7 @@ const Products = (props) => {
   const { addToWishlist } = useContext(WishlistContext);
 
   const handleClick = () => {
-    addToWishlist(props);
+    addToWishlist({ productImg, productName, price });
   }
 
   return (

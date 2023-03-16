@@ -1,0 +1,41 @@
+.summary__title {
+    font-size: 24px;
+    text-align: left;
+  }
+  
+  .summary__body {
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 40px;
+  }
+  
+  .summary__line {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .btn_dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    box-shadow: none;
+  }
+  
+  .btn_dark:hover {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+  }
+  
+  .btn_dark.disabled,
+  .btn_dark:disabled {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+  
+  .btn_full_width {
+      width: 100%;
+    }
