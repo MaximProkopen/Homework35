@@ -15,7 +15,8 @@ const Summary = () => {
             </div>
 
             <Button
-                bannerBtn="Check Out"
+                name="Check Out"
+                color="dark"
                 className={classNames(
                     styles.btn,
                     styles.btn_dark,

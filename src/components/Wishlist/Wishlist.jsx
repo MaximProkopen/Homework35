@@ -1,7 +1,7 @@
 import styles from "./Wishlist.module.scss";
-import stylesBtn from "../Category/Category.module.scss";
 import productAddImg from '../../components/Products/Products_img/product-07.jpg';
 import classNames from "classnames";
+import Button from "../Button/Button";
 
 const Wishlist = () => {
   return (
@@ -38,9 +38,7 @@ const Wishlist = () => {
         </div>
       </div>
       <div className={styles.item__buttons}>
-        <button className={classNames(stylesBtn.btn, stylesBtn.btn_dark)}>
-          Add To Cart
-        </button>
+        <Button name="Add To Cart" color="dark" />
       </div>
     </div>
   );

@@ -84,7 +84,7 @@ const HomePage = () => {
                                 price="63"
                             />
                         </div>
-                        <Button bannerBtn="Shop Now" />
+                        <Button name="Shop Now" />
                     </div>
                 </section>
 
