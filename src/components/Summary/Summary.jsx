@@ -13,7 +13,6 @@ const Summary = () => {
                     <div>$2020.00</div>
                 </div>
             </div>
-
             <Button
                 name="Check Out"
                 color="dark"

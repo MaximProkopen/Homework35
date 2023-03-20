@@ -1,9 +1,8 @@
-import React from 'react'
 import styles from './Banner.module.scss';
 import classNames from 'classnames';
 
 const Banner = (props) => {
-  const {imgBanner, titleBanner, btnBanner} = props;
+  const { imgBanner, titleBanner, btnBanner } = props;
   return (
     <section className={styles.banner}>
       <div className={styles.container}>
@@ -12,7 +11,9 @@ const Banner = (props) => {
           <div className={styles.banner__overlay}>
             <div>
               <h1 className={styles.banner__title}>{titleBanner}</h1>
-              <a href="/" className={classNames(styles.btn, styles.btn_dark)}>{btnBanner}</a>
+              <a href="/" className={classNames(styles.btn, styles.btn_dark)}>
+                {btnBanner}
+              </a>
             </div>
           </div>
         </div>
@@ -21,4 +22,4 @@ const Banner = (props) => {
   )
 }
 
-export default Banner
+export default Banner;

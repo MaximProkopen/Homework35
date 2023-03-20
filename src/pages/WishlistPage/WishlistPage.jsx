@@ -6,7 +6,6 @@ const WishlistPage = () => {
     <div>
       <h2 className={styles.wishlist__title}>Wishlist</h2>
       <Wishlist />
-      <Wishlist />
     </div>
   );
 };

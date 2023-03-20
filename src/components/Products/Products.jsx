@@ -1,18 +1,15 @@
 import { useContext } from 'react';
-import { WishlistContext } from '../../App';
+import { WishlistContext } from "../Context/ProductContext";
 import styles from './Products.module.scss';
 
-const Products = (props) => {
-  const { productImg, productName, price } = props;
-
+const Products = (product) => {
+  const { productImg, productName, price, id } = product;
   const { addToWishlist } = useContext(WishlistContext);
-
   const handleClick = () => {
-    addToWishlist({ productImg, productName, price });
-  }
-
+    addToWishlist(product);
+  };
   return (
-    <div className={styles.products}>
+    <div className={styles.product} id={id}>
       <div className={styles.products_image}>
         <a href="/" className={styles.products_image_block}>
           <img src={productImg} alt={productName} />
@@ -41,7 +38,7 @@ const Products = (props) => {
         <p>${price}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Products;
