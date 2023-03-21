@@ -71,7 +71,7 @@ const ProductsItem = () => {
                             <Products
                                 id={i}
                                 key={i}
-                                img={product.img}
+                                productImg={product.img}
                                 productName={product.name}
                                 price={product.price}
                             />

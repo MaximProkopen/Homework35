@@ -5,7 +5,7 @@ import classNames from "classnames";
 import Button from "../Button/Button";
 
 const Item = (props) => {
-  const { img, price, productName, id } = props.item;
+  const { productImg, price, productName, id } = props.item;
 
   const { removeFromWishlist } = useContext(WishlistContext);
 
@@ -32,7 +32,7 @@ const Item = (props) => {
           </svg>
         </button>
         <div className={styles.item__body}>
-          <img src={img} alt={productName} className={styles.item__image} />
+          <img src={productImg} alt={productName} className={styles.item__image} />
           <div className={classNames(styles.media_body, styles.mw - 210)}>
             <p className={styles.item__title}>{productName}</p>
             <p className={styles.item__price}>{price}</p>
@@ -40,7 +40,11 @@ const Item = (props) => {
         </div>
       </div>
       <div className={styles.item__buttons}>
-        <Button bannerBtn="Add To Cart" />
+        <Button
+          name="Add To Cart"
+          color="dark"
+          
+        />
       </div>
     </div>
   );

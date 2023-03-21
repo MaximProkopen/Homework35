@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner/Banner';
 import Category from '../../components/Category/Category';
-import Products from '../../components/Products/Products';
+import ProductsItem from '../../components/Products/ProductList';
 import Button from '../../components/Button/Button';
 import CategoryTitle from '../../components/CategoryTitle/CategoryTitle';
 import bannerImg from '../../components/Banner/Banner_img/banner-img.jpg';
@@ -29,7 +29,7 @@ const HomePage = () => {
                     </div>
                 </section>
 
-                <Products />
+                <ProductsItem />
 
                 <div className={styles.btn__hp}>
                     <Button name="Shop Now" />
