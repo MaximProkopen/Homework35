@@ -1,12 +1,14 @@
-import { useContext } from 'react';
-import { WishlistContext } from "../Context/ProductContext";
+import { useDispatch } from "react-redux"; 
+import { addToWishlist } from "../../reduxToolkit/ReduxToolkit";
 import styles from './Products.module.scss';
 
 const Products = (product) => {
   const { productImg, productName, price, id } = product;
-  const { addToWishlist } = useContext(WishlistContext);
+
+  const dispatch = useDispatch();
+
   const handleClick = () => {
-    addToWishlist(product);
+    dispatch(addToWishlist(product));
   };
   return (
     <div className={styles.product} id={id}>

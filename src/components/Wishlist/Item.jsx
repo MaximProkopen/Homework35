@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { WishlistContext } from "../Context/ProductContext";
+import { useDispatch } from "react-redux";
+import { removeFromWishlist } from "../../reduxToolkit/ReduxToolkit"
 import styles from "./Wishlist.module.scss";
 import classNames from "classnames";
 import Button from "../Button/Button";
@@ -7,10 +7,10 @@ import Button from "../Button/Button";
 const Item = (props) => {
   const { productImg, price, productName, id } = props.item;
 
-  const { removeFromWishlist } = useContext(WishlistContext);
+  const dispatch = useDispatch();
 
   const handelClick = () => {
-    removeFromWishlist(id);
+    dispatch(removeFromWishlist(id));
   };
   return (
     <div className={styles.item}>

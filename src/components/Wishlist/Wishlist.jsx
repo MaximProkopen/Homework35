@@ -1,17 +1,17 @@
-import { useContext } from "react";
-import { WishlistContext } from "../Context/ProductContext";
+import { useSelector } from "react-redux";
 import Item from "./Item";
 
 
 const Wishlist = () => {
-  const { state } = useContext(WishlistContext);
+  const value = useSelector((store) => store.product);
 
   return (
     <div>
-        {state?.productWishlist && state?.productWishlist.map((item, i) => (
-          <Item key={i} id={i} item={item} name={item.productName}/>
+      {value?.productWishlist &&
+        value?.productWishlist.map((item, i) => (
+          <Item key={i} id={i} item={item} name={item.productName} />
         ))}
-      </div>
+    </div>
   );
 };
 
