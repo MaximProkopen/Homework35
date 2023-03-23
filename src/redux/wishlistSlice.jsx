@@ -4,7 +4,7 @@ export const initialState = {
     productWishlist: [],
 };
 
-export const wishlistReducer = createSlice({
+export const wishlistSlice = createSlice({
     name: "product",
     initialState: initialState,
     reducers: {
@@ -19,5 +19,5 @@ export const wishlistReducer = createSlice({
     },
   });
   
-  export const { addToWishlist, removeFromWishlist } = wishlistReducer.actions;
-  export default wishlistReducer.reducer;
+  export const { addToWishlist, removeFromWishlist } = wishlistSlice.actions;
+  export default wishlistSlice.reducer;

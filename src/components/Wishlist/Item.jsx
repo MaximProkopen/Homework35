@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { removeFromWishlist } from "../../reduxToolkit/ReduxToolkit"
+import { removeFromWishlist } from "../../redux/wishlistSlice"
 import styles from "./Wishlist.module.scss";
 import classNames from "classnames";
 import Button from "../Button/Button";
