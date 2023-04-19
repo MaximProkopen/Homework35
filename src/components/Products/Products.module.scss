@@ -71,6 +71,11 @@
   display: block;
 }
 
+.products_image_block img {
+  height: 300px;
+  object-fit: cover;
+}
+
 .add_to_wishlist {
   position: absolute;
   top: 10px;
